@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
-body {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -12,40 +16,180 @@ a {
 }
 
 p {
-    margin: .025rem 0;
+    margin: .75rem 0;
 }
-
-/* Navbar */
 
 #navbar {
     display: flex;
+    justify-content: space-between;
     background: #333;
     color: #fff;
     position: sticky;
     top: 0;
+    left: 0;
     z-index: 1;
-    justify-content: space-between;
-    padding: 0 1rem;
+    padding: 1rem;
 }
 
 #navbar ul {
     display: flex;
-    list-style: none;
     align-items: center;
+    list-style: none;
 }
 
-#navbar ul li {
-    padding: 0.75rem;
-    margain: 0 0.25rem;
+#navbar ul li a {
+    color: #fff;
+    padding: .75rem;
+    margin: 0 0.25rem;
 }
-#navbar ul li:hover {
-    background: #34E4EA;
-    cursor: pointer;
+
+#navbar ul li a:hover {
+    background: #C3423F;
     border-radius: 5px;
-    color: #333;
+}
+/* Showcase */
+#showcase {
+    background: #333 url('../img/appolinary-kalashnikova-754124-unsplash.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+}
+
+.showcase-content {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 65px;
+    bottom: 0;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    top: 0;
+    left: 0;
+}
+
+/* Section: what we do */
+
+.items {
+    display: flex;
+    padding: 1rem;
+}
+
+.item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+.item i {
+    background: #C3423F;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: .7rem;
+}
+
+.item p {
+    font-weight: bold;
+    line-height: 1.3rem;
+}
+
+/* Section: who we are */
+#who {
+    display: flex;
+}
+
+#who div {
+    flex: 1;
+}
+
+#who .who-img {
+    background: #333 url("../img/tobias-mrzyk-569902-unsplash.jpg") no-repeat center center/cover;
+}
+
+#who .who-text {
+    padding: 1rem;
+}
+
+#who .who-text p {
+    line-height: 1.4rem;
+    font-weight: bold;
+}
+
+#who .who-text h3 {
+    padding-bottom: .5rem;
+    font-weight: bold;
+}
+
+#who .who-text .team {
+    list-style: none;
+}
+
+#who .who-text .team li {
+    margin-bottom: .3rem;
+    font-size: .9rem;
+    border-bottom: 1px solid #3f3e2d;
+}
+
+/* utility classes */
+
+.container {
+    max-width: 1100px;
+    text-align: center;
+    overflow: hidden;
+    padding: 0 2rem;
+    margin: auto;
+    padding-top: 1rem;
+    font-size: 2rem;
 }
 
 .color-primary {
-    color: #34E4EA;
+    color: #C3423F;
 }
+
+.l-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.m-heading {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+}
+
+.lead {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background: red;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    color: #fff;
+    background: #C3423F
+}
+
+.btn:hover {
+    background: #7e7a42;
+    color: #ddd;
+}
+
+.bg-dark {
+    background: #333;
+    color: #ddd;
+}
+
+
+
+
+
+
+
+
+
 
